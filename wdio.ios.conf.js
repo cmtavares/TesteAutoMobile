@@ -15,6 +15,9 @@ exports.config = {
         './test/specs/**/*.spec.js'
     ],
     suites: {
+        login: [
+            './test/specs/login.test.js'
+        ],
         products: [
             './test/specs/products.spec.js',
             './test/specs/search.spec.js'
@@ -28,7 +31,7 @@ exports.config = {
             "appium:deviceName": "iPhone Simulator",
             "appium:platformVersion": "17",
             "appium:automationName": "XCUITest",
-            "appium:app": `${process.cwd()}/app/loja-ebac.app` 
+            "appium:app": `${process.cwd()}/app/LojaEBAC.ipa` 
 
         }
     ],
